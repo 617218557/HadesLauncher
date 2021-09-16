@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.fc.hadeslauncher">
+    package="com.fc.HadesLauncher">
 
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -11,8 +11,7 @@
         tools:ignore="ScopedStorage" />
 
     <application
-        android:name=".MyApplication"
-        android:allowBackup="true"
+        android:name="com.fc.HadesLauncher.MyApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
@@ -21,7 +20,7 @@
         android:theme="@style/Theme.Hadeslauncher">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.fc.HadesLauncher.MainActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="fullSensor">
